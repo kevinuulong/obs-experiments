@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Icons+Round");
+.blue {
+  color: #2F80ED;
+}
+
+.blue.bkg {
+  background: #2F80ED;
+  color: #FFFFFF;
+}
+
+.green {
+  color: #2DDB73;
+}
+
+.green.bkg {
+  background: #2DDB73;
+  color: #2B2C30;
+}
+
+.orange {
+  color: #F2994A;
+}
+
+.orange.bkg {
+  background: #F2994A;
+  color: #2B2C30;
+}
+
+.purple {
+  color: #9B51E0;
+}
+
+.purple.bkg {
+  background: #9B51E0;
+  color: #FFFFFF;
+}
+
+.red {
+  color: #EB5757;
+}
+
+.red.bkg {
+  background: #EB5757;
+  color: #FFFFFF;
+}
+
+.white {
+  color: #2B2C30;
+}
+
+.white.bkg {
+  background: #FFFFFF;
+  color: #2B2C30;
+}
+
+.black {
+  color: #FFFFFF;
+}
+
+.black.bkg {
+  background: #2B2C30;
+  color: #FFFFFF;
+}
+
+body, html {
+  background-color: transparent;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 80px;
+}
+
+.bottom-thirds {
+  height: 240px;
+  width: 920px;
+  display: inline-block;
+  position: absolute;
+  bottom: 80px;
+}
+
+.bottom-thirds .pfp {
+  width: 140px;
+}
+
+.bottom-thirds .container, .bottom-thirds .pfp {
+  border-radius: 35px;
+}
+
+.bottom-thirds .container {
+  padding: 20px;
+  overflow: hidden;
+  position: relative;
+  visibility: hidden;
+  -webkit-animation: 1s slide-in ease-in-out 1s;
+          animation: 1s slide-in ease-in-out 1s;
+}
+
+.bottom-thirds .container.exit {
+  -webkit-animation: 1s slide-out ease-in-out .5s;
+          animation: 1s slide-out ease-in-out .5s;
+}
+
+.bottom-thirds .sub {
+  border-radius: 15px;
+  width: 620px;
+  height: 60px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  padding: 20px;
+  visibility: hidden;
+  -webkit-animation: 1s grow-in ease-in-out 1.5s;
+          animation: 1s grow-in ease-in-out 1.5s;
+}
+
+.bottom-thirds .sub.exit {
+  -webkit-animation: 1s grow-out ease-in-out;
+          animation: 1s grow-out ease-in-out;
+}
+
+.bottom-thirds .animating {
+  visibility: visible;
+}
+
+.bottom-thirds .text {
+  vertical-align: top;
+  display: inline-block;
+  position: absolute;
+  width: 680px;
+  margin-left: 40px;
+}
+
+.bottom-thirds h1 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 60px;
+  height: 60px;
+}
+
+.bottom-thirds p {
+  margin: 0;
+  font-size: 24px;
+  line-height: 40px;
+  height: 40px;
+}
+
+.bottom-thirds h2 {
+  font-size: 24px;
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  margin: 0;
+}
+
+.bottom-thirds .social-icons {
+  float: right;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.bottom-thirds .social-icons .social-icon {
+  margin: 10px;
+}
+
+@-webkit-keyframes slide-in {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0 round 35px);
+            clip-path: inset(0 100% 0 0 round 35px);
+    visibility: visible;
+  }
+  to {
+    -webkit-clip-path: inset(0 round 35px);
+            clip-path: inset(0 round 35px);
+    visibility: visible;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    -webkit-clip-path: inset(0 100% 0 0 round 35px);
+            clip-path: inset(0 100% 0 0 round 35px);
+    visibility: visible;
+  }
+  to {
+    -webkit-clip-path: inset(0 round 35px);
+            clip-path: inset(0 round 35px);
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes grow-in {
+  from {
+    visibility: visible;
+    -webkit-clip-path: inset(0 25% 0 75% round 15px);
+            clip-path: inset(0 25% 0 75% round 15px);
+  }
+  to {
+    visibility: visible;
+    -webkit-clip-path: inset(0 round 15px);
+            clip-path: inset(0 round 15px);
+  }
+}
+
+@keyframes grow-in {
+  from {
+    visibility: visible;
+    -webkit-clip-path: inset(0 25% 0 75% round 15px);
+            clip-path: inset(0 25% 0 75% round 15px);
+  }
+  to {
+    visibility: visible;
+    -webkit-clip-path: inset(0 round 15px);
+            clip-path: inset(0 round 15px);
+  }
+}
+
+@-webkit-keyframes slide-out {
+  from {
+    -webkit-clip-path: inset(0 round 35px);
+            clip-path: inset(0 round 35px);
+    visibility: visible;
+  }
+  to {
+    -webkit-clip-path: inset(0 100% 0 0 round 35px);
+            clip-path: inset(0 100% 0 0 round 35px);
+    visibility: visible;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    -webkit-clip-path: inset(0 round 35px);
+            clip-path: inset(0 round 35px);
+    visibility: visible;
+  }
+  to {
+    -webkit-clip-path: inset(0 100% 0 0 round 35px);
+            clip-path: inset(0 100% 0 0 round 35px);
+    visibility: visible;
+  }
+}
+
+@-webkit-keyframes grow-out {
+  from {
+    visibility: visible;
+    -webkit-clip-path: inset(0 round 15px);
+            clip-path: inset(0 round 15px);
+  }
+  to {
+    visibility: visible;
+    -webkit-clip-path: inset(0 25% 0 75% round 15px);
+            clip-path: inset(0 25% 0 75% round 15px);
+  }
+}
+
+@keyframes grow-out {
+  from {
+    visibility: visible;
+    -webkit-clip-path: inset(0 round 15px);
+            clip-path: inset(0 round 15px);
+  }
+  to {
+    visibility: visible;
+    -webkit-clip-path: inset(0 25% 0 75% round 15px);
+            clip-path: inset(0 25% 0 75% round 15px);
+  }
+}
+/*# sourceMappingURL=main.css.map */

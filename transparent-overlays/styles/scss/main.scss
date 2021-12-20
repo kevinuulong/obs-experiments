@@ -1,0 +1,148 @@
+@import "colors";
+@import "fonts";
+@import "size";
+
+
+body, html {
+    background-color: transparent;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: $size * 2;
+}
+
+.bottom-thirds {
+    height: $size * 6;
+    width: $size * 23;
+    display: inline-block;
+    position: absolute;
+    bottom: $size * 2;
+
+    .pfp {
+        width: $size * 7/2;
+    }
+
+    .container, .pfp  {
+        border-radius: $size * 7/8;
+    }
+    .container {
+        padding: $size * 1/2;
+        overflow: hidden;
+        position: relative;
+        visibility: hidden;
+
+        animation: 1s slide-in ease-in-out 1s;
+    }
+    .container.exit {
+        animation: 1s slide-out ease-in-out .5s;
+    }
+
+    .sub {
+        border-radius: $size * 3/8;
+        width: $size * 31/2;
+        height: $size * 3/2;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        right: $size;
+        padding: $size * 1/2;
+        visibility: hidden;
+
+        animation: 1s grow-in ease-in-out 1.5s;
+    }
+
+    .sub.exit {
+        animation: 1s grow-out ease-in-out;
+    }
+
+    .animating {
+        visibility: visible;
+    }
+
+    .text {
+        vertical-align: top;
+        display: inline-block;
+        position: absolute;
+        width: $size * 17;
+        margin-left: $size;
+    }
+
+    h1 {
+        margin: 0;
+        font-size: 36px;
+        line-height: $size * 3/2;
+        height: $size * 3/2;
+    }
+
+    p {
+        margin: 0;
+        font-size: 24px;
+        line-height: $size;
+        height: $size;
+    }
+
+    h2 {
+        font-size: 24px;
+        display: inline-block;
+        height: $size * 3/2;
+        line-height: $size * 3/2;
+        margin: 0;
+    }
+
+    .social-icons {
+        float: right;
+        height: $size * 3/2;
+        display: flex;
+        align-items: center;
+        
+        .social-icon {
+            margin: $size * 1/4;
+        }
+    }
+}
+
+@keyframes slide-in {
+    from {
+        clip-path: inset(0 100% 0 0 round 35px);
+        visibility: visible;
+    }
+    to {
+        clip-path: inset(0 round 35px);
+        visibility: visible;
+    }
+}
+
+@keyframes grow-in {
+    from {
+        visibility: visible;
+        clip-path: inset(0 25% 0 75% round 15px);
+    }
+    to {
+        visibility: visible;
+        clip-path: inset(0 round 15px);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        clip-path: inset(0 round 35px);
+        visibility: visible;
+    }
+    to {
+        clip-path: inset(0 100% 0 0 round 35px);
+        visibility: visible;
+    }
+}
+
+@keyframes grow-out {
+    from {
+        visibility: visible;
+        clip-path: inset(0 round 15px);
+    }
+    to {
+        visibility: visible;
+        clip-path: inset(0 25% 0 75% round 15px);
+    }
+}

@@ -1,0 +1,71 @@
+$blue: #2F80ED;
+$green: #2DDB73;
+$orange: #F2994A;
+$purple: #9B51E0;
+$red: #EB5757;
+
+$dark: #2B2C30;
+$light: #FFFFFF;
+
+$secondary: #F0F0F6;
+
+.blue {
+	color: $blue;
+}
+
+.blue.bkg {
+	background: $blue;
+	color: $light;
+}
+
+.green {
+	color: $green;
+}
+
+.green.bkg {
+	background: $green;
+	color: $dark;
+}
+
+.orange {
+	color: $orange;
+}
+
+.orange.bkg {
+	background: $orange;
+	color: $dark;
+}
+
+.purple {
+	color: $purple;
+}
+
+.purple.bkg {
+	background: $purple;
+	color: $light;
+}
+
+.red {
+	color: $red;
+}
+
+.red.bkg {
+	background: $red;
+	color: $light;
+}
+
+.white {
+	color: $dark;
+}
+.white.bkg {
+	background: $light;
+	color: $dark;
+}
+
+.black {
+	color: $light;
+}
+.black.bkg {
+	background: $dark;
+	color: $light;
+}

@@ -1,0 +1,3 @@
+# Include no files from this directory except the .gitignore:
+/*.*
+!/.gitignore
