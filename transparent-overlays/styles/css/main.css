@@ -73,6 +73,47 @@ body {
   margin: 80px;
 }
 
+.bubble {
+  position: relative;
+}
+
+.bubble .label {
+  height: 60px;
+  line-height: 60px;
+  border-radius: 15px;
+  display: inline-block;
+  position: absolute;
+  top: -30px;
+  left: 20px;
+}
+
+.bubble h2 {
+  font-size: 24px;
+  margin: 0;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+
+.bubble .container {
+  border-radius: 35px;
+  height: 160px;
+  line-height: 160px;
+  display: inline-block;
+}
+
+.bubble h1 {
+  font-size: 72px;
+  margin: 0;
+  margin-right: 80px;
+  margin-left: 80px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.bubble *:focus {
+  outline: none;
+}
+
 .bottom-thirds {
   height: 240px;
   width: 920px;

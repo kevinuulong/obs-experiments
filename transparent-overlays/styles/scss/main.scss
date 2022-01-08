@@ -13,6 +13,46 @@ body {
     margin: $size * 2;
 }
 
+.bubble {
+    position: relative;
+
+    .label {
+        height: $size * 3/2;
+        line-height: $size * 3/2;
+        border-radius: $size * 3/8;
+        display: inline-block;
+        position: absolute;
+        top: $size * -3/4;
+        left: $size * 1/2;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin: 0;
+        margin-right: $size;
+        margin-left: $size;
+    }
+
+    .container {
+        border-radius: $size * 7/8;
+        height: $size * 4;
+        line-height: $size * 4;
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 72px;
+        margin: 0;
+        margin-right: $size * 2;
+        margin-left: $size * 2;
+        white-space: nowrap;
+        text-align: center;
+    }
+    *:focus {
+        outline: none;
+    }
+}
+
 .bottom-thirds {
     height: $size * 6;
     width: $size * 23;
