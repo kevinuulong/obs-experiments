@@ -1,6 +1,6 @@
 let timer;
 // NOTE: Will need to change this method of selection (in the longer term), this is just a proof of concept:
-let timeElem = document.querySelector(".bubble > div.green.bkg.container > h1");
+let timeElem = document.querySelector(".bubble > div.container > h1");
 
 // Start and end in seconds
 function countdown(start, end) {
